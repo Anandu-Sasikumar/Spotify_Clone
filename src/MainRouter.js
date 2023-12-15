@@ -6,16 +6,15 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Topbar from './Topbar';
 
-const App = () => {
+const MainRouter = () => {
   return (
    
     
    <>
    <Routes>
-   <Route path='/' element={<HomePage/>} />
-    <Route path='/HomePage' element={<HomePage/>} />
-    <Route path='/LoginPage' element={<LoginPage/>}/>
-    <Route path='/SearchPage' element={<SearchPage/>}/>
+    <Route path='\' element={<HomePage/>} />
+    <Route path='\LoginPage' element={<LoginPage/>}/>
+    <Route path='\SearchPage' element={<SearchPage/>}/>
 
    </Routes>
    </>
@@ -23,4 +22,4 @@ const App = () => {
   )
 }
 
-export default App
+export default MainRouter
